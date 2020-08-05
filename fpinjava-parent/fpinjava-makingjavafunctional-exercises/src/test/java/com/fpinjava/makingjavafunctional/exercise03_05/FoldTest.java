@@ -1,16 +1,14 @@
 package com.fpinjava.makingjavafunctional.exercise03_05;
 
-import static org.junit.Assert.*;
-
-import java.util.List;
+import static com.fpinjava.makingjavafunctional.exercise03_04.CollectionUtilities.list;
+import static com.fpinjava.makingjavafunctional.exercise03_05.Fold.fold;
+import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
-import static com.fpinjava.makingjavafunctional.exercise03_04.CollectionUtilities.list;
-import static com.fpinjava.makingjavafunctional.exercise03_05.Fold.fold;
+import java.util.List;
 
 public class FoldTest {
-
   @Test
   public void testFold() {
     List<Integer> emptyList = list();

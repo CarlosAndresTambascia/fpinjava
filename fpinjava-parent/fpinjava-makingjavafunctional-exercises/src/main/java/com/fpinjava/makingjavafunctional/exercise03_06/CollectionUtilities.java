@@ -52,7 +52,7 @@ public class CollectionUtilities {
     U result;
     result = identity;
     for(T i : ts){
-      f.apply(result).apply(i);
+      result = f.apply(result).apply(i);
     }
     return result;
   }
